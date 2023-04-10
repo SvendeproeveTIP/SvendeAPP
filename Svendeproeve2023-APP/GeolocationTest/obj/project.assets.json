@@ -21,12 +21,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -34,12 +34,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -78,12 +78,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -263,16 +263,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -292,12 +292,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -314,18 +314,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -336,12 +349,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -368,12 +417,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2066,12 +2115,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2082,12 +2131,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2349,12 +2398,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2367,12 +2416,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2384,12 +2433,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -2414,12 +2463,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2427,12 +2476,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2471,12 +2520,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2656,16 +2705,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -2685,12 +2734,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -2707,18 +2756,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -2729,12 +2791,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -2761,12 +2859,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4459,12 +4557,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4475,12 +4573,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4742,12 +4840,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4760,12 +4858,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4777,12 +4875,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -4807,12 +4905,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4820,12 +4918,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -4864,12 +4962,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -5049,16 +5147,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -5078,12 +5176,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -5100,18 +5198,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -5122,12 +5233,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -5154,12 +5301,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -6852,12 +6999,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -6868,12 +7015,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7135,12 +7282,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7153,12 +7300,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7170,12 +7317,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -7200,12 +7347,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7213,12 +7360,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7257,12 +7404,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7442,16 +7589,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -7471,12 +7618,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -7493,18 +7640,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -7515,12 +7675,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -7547,12 +7743,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9245,12 +9441,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9261,12 +9457,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9528,12 +9724,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9546,12 +9742,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9563,12 +9759,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -9593,12 +9789,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9606,12 +9802,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9650,12 +9846,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9835,16 +10031,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -9864,12 +10060,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -9886,18 +10082,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -9908,12 +10117,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -9940,12 +10185,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11638,12 +11883,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11654,12 +11899,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11921,12 +12166,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11939,12 +12184,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11956,12 +12201,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -11986,12 +12231,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -11999,12 +12244,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -12043,12 +12288,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -12228,16 +12473,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -12257,12 +12502,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -12279,18 +12524,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -12301,12 +12559,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -12333,12 +12627,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14031,12 +14325,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14047,12 +14341,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14314,12 +14608,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14332,12 +14626,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14349,12 +14643,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -14379,12 +14673,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14392,12 +14686,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14436,12 +14730,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14621,16 +14915,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -14650,12 +14944,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -14672,18 +14966,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -14694,12 +15001,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -14726,12 +15069,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16424,12 +16767,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16440,12 +16783,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16707,12 +17050,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16725,12 +17068,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16742,12 +17085,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -16772,12 +17115,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16785,12 +17128,12 @@
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -16829,12 +17172,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -17014,16 +17357,16 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Controls.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll": {
@@ -17043,12 +17386,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/Microsoft.Maui.Maps.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml;.aar"
           }
         }
       },
@@ -17065,18 +17408,31 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-android30.0/Syncfusion.Maui.Core.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml;.aar"
           }
         }
       },
@@ -17087,12 +17443,48 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.Gauges.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml;.aar"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml;.aar"
+          }
+        },
+        "resource": {
+          "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -17119,12 +17511,12 @@
         },
         "compile": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android30.0/Syncfusion.Maui.ProgressBar.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -18817,12 +19209,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.AutoValue.Annotations.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -18833,12 +19225,12 @@
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net6.0-android31.0/Xamarin.Google.Crypto.Tink.Android.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -19100,12 +19492,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -19118,12 +19510,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Comet.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       },
@@ -19135,12 +19527,12 @@
         },
         "compile": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ZXing.Net.MAUI.Controls.dll": {
-            "related": ".aar;.xml"
+            "related": ".xml;.aar"
           }
         }
       }
@@ -19403,7 +19795,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -19459,7 +19851,7 @@
           "lib/net6.0-ios16.1/MauiPopup.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -19470,6 +19862,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -19487,6 +19892,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -20009,7 +20450,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -20189,7 +20630,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -20200,6 +20641,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -20217,6 +20671,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -20760,7 +21250,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -20940,7 +21430,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -20951,6 +21441,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -20968,6 +21471,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -21511,7 +22050,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -21691,7 +22230,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -21702,6 +22241,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -21719,6 +22271,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -22262,7 +22850,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -22442,7 +23030,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -22453,6 +23041,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -22470,6 +23071,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -23013,7 +23650,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -23193,7 +23830,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -23204,6 +23841,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -23221,6 +23871,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -23764,7 +24450,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -23944,7 +24630,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -23955,6 +24641,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -23972,6 +24671,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -24515,7 +25250,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios16.1/Microsoft.Maui.Graphics.dll": {
@@ -24676,7 +25411,7 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
@@ -24687,6 +25422,19 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Licensing.dll": {},
           "lib/net7.0-ios13.6/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -24704,6 +25452,42 @@
         "runtime": {
           "lib/net7.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -25247,7 +26031,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -25303,7 +26087,7 @@
           "lib/net6.0-maccatalyst16.1/MauiPopup.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -25314,6 +26098,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -25331,6 +26128,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -25853,7 +26686,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -26033,7 +26866,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -26044,6 +26877,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -26061,6 +26907,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -26604,7 +27486,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -26784,7 +27666,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -26795,6 +27677,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -26812,6 +27707,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -27355,7 +28286,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -27535,7 +28466,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -27546,6 +28477,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -27563,6 +28507,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -28106,7 +29086,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -28286,7 +29266,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -28297,6 +29277,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -28314,6 +29307,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -28857,7 +29886,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -29037,7 +30066,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -29048,6 +30077,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -29065,6 +30107,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -29608,7 +30686,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -29788,7 +30866,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -29799,6 +30877,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -29816,6 +30907,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -30359,7 +31486,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst16.1/Microsoft.Maui.Graphics.dll": {
@@ -30520,7 +31647,7 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
@@ -30531,6 +31658,19 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Licensing.dll": {},
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll": {
             "related": ".xml"
           }
         }
@@ -30548,6 +31688,42 @@
         "runtime": {
           "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -31120,7 +32296,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -31133,12 +32309,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -31189,7 +32365,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -31282,7 +32458,7 @@
           "lib/net6.0-windows10.0.19041/MauiPopup.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -31293,6 +32469,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -31310,6 +32499,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -31839,7 +33064,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -31852,12 +33077,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -31908,7 +33133,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -32111,7 +33336,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -32122,6 +33347,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -32139,6 +33377,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -32689,7 +33963,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -32702,12 +33976,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -32758,7 +34032,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -32961,7 +34235,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -32972,6 +34246,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -32989,6 +34276,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -33539,7 +34862,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -33552,12 +34875,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -33608,7 +34931,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -33811,7 +35134,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -33822,6 +35145,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -33839,6 +35175,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -34389,7 +35761,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -34402,12 +35774,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -34458,7 +35830,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -34661,7 +36033,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -34672,6 +36044,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -34689,6 +36074,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -35239,7 +36660,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -35252,12 +36673,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -35308,7 +36729,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -35511,7 +36932,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -35522,6 +36943,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -35539,6 +36973,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -36089,7 +37559,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -36102,12 +37572,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -36158,7 +37628,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -36361,7 +37831,7 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -36372,6 +37842,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -36389,6 +37872,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -36942,7 +38461,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/7.0.59": {
+      "Microsoft.Maui.Graphics/7.0.52": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
@@ -36955,12 +38474,12 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.59",
-          "Microsoft.WindowsAppSDK": "1.2.221209.1"
+          "Microsoft.Maui.Graphics": "7.0.52",
+          "Microsoft.WindowsAppSDK": "1.2.221109.1"
         },
         "compile": {
           "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
@@ -37011,7 +38530,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.2.221209.1": {
+      "Microsoft.WindowsAppSDK/1.2.221109.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -37198,7 +38717,7 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Maui.Core/21.1.35": {
+      "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
@@ -37209,6 +38728,19 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {},
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.DataSource/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -37226,6 +38758,42 @@
         "runtime": {
           "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
             "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.GridCommon/21.1.38": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.ListView/21.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38",
+          "Syncfusion.Maui.DataSource": "21.1.38",
+          "Syncfusion.Maui.GridCommon": "21.1.38"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -38009,15 +39577,13 @@
         "microsoft.maui.controls.maps.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics/7.0.59": {
-      "sha512": "a5eOfzqeHeERBmQ6g3uU+p4GEwHtBXxQ1s58XIiHCMf/WGCn5HX9z17VLUz6qr2ELVf/BbZ9bFUzVef+kbxkvQ==",
+    "Microsoft.Maui.Graphics/7.0.52": {
+      "sha512": "MSV8tGhjgPuzxvU97enZgZeUejHqkhQaAy7yBY0sqmJpsWvbw5qcWgwLsXEob0AmTLCY08yK/PnMdV34hCuTAQ==",
       "type": "package",
-      "path": "microsoft.maui.graphics/7.0.59",
+      "path": "microsoft.maui.graphics/7.0.52",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0-android33.0/Microsoft.Maui.Graphics.dll",
         "lib/net7.0-android33.0/Microsoft.Maui.Graphics.pdb",
         "lib/net7.0-android33.0/Microsoft.Maui.Graphics.xml",
@@ -38048,24 +39614,22 @@
         "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
-        "microsoft.maui.graphics.7.0.59.nupkg.sha512",
+        "microsoft.maui.graphics.7.0.52.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.59": {
-      "sha512": "ExNm2DreudUpAESDCpmFqruINxrjgpNOl+80GjCp/yoFv6QX3exYBmrFZ2zWSb7RrvWJnBPN9SaOHbkpT2+x2A==",
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.52": {
+      "sha512": "vMSto97Vdvr5ln5gStZJv127G0iEFb2GX8aAzElHzLbS3E+Ey7SwI10fYoo1Z4ZH5tXKdOYI4xW32GmDCcN1sQ==",
       "type": "package",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.59",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.52",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
         "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "microsoft.maui.graphics.win2d.winui.desktop.7.0.59.nupkg.sha512",
+        "microsoft.maui.graphics.win2d.winui.desktop.7.0.52.nupkg.sha512",
         "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
       ]
     },
@@ -38331,10 +39895,10 @@
         "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.2.221209.1": {
-      "sha512": "1Y8KDCmUqytdduubaQhRz6aqaP7YhVSPE/fHeqLMsK3DrV+eBThrqkM6R/8N2lu0mwkNfKSTSAhixrTR72nyWA==",
+    "Microsoft.WindowsAppSDK/1.2.221109.1": {
+      "sha512": "5My+tXeFoC2+jPdLD91KDuEvssEEvrQOONrKmdFE7Upws22ASwyCbF5JglJPnCvrLGhIRqwPsV/zlyX/q5LNgQ==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.2.221209.1",
+      "path": "microsoft.windowsappsdk/1.2.221109.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -38796,7 +40360,7 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+        "microsoft.windowsappsdk.1.2.221109.1.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
@@ -39312,10 +40876,10 @@
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
-    "Syncfusion.Maui.Core/21.1.35": {
-      "sha512": "AX1CdjTIaN3s7T62XmQhN8v+Fkozl2gzdV49Qw0qLaPa0DYblmc9Hf/8iblUJJ2rVUP3VAQnzeuW465Y2adOow==",
+    "Syncfusion.Maui.Core/21.1.38": {
+      "sha512": "gQf22G5LD5ldblmjGHsjJ0+VBc5N9A7NMSymfkmPjwdPu2YqdQD7V9vmz5XQ/a9v6iAr/K4vGTAolrg6CpJ+Qw==",
       "type": "package",
-      "path": "syncfusion.maui.core/21.1.35",
+      "path": "syncfusion.maui.core/21.1.38",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -39356,8 +40920,47 @@
         "lib/net7.0/Syncfusion.Maui.Core.deps.json",
         "lib/net7.0/Syncfusion.Maui.Core.dll",
         "lib/net7.0/Syncfusion.Maui.Core.xml",
-        "syncfusion.maui.core.21.1.35.nupkg.sha512",
+        "syncfusion.maui.core.21.1.38.nupkg.sha512",
         "syncfusion.maui.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.DataSource/21.1.38": {
+      "sha512": "E2BfMAPE7gQdmza78rbz2xCug2FXaMRDccjQ0HJkR2FJ8q0e30B1Ev3Sn0UXPWlbjZx31IUfGp/8GtWvNOcE/Q==",
+      "type": "package",
+      "path": "syncfusion.maui.datasource/21.1.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0-android30.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net6.0-android30.0/Syncfusion.Maui.DataSource.xml",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.DataSource.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.DataSource.xml",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataSource.xml",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.deps.json",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.xml",
+        "lib/net6.0/Syncfusion.Maui.DataSource.deps.json",
+        "lib/net6.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net6.0/Syncfusion.Maui.DataSource.xml",
+        "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.aar",
+        "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.DataSource.xml",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.DataSource.xml",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.DataSource.xml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.DataSource.xml",
+        "lib/net7.0/Syncfusion.Maui.DataSource.deps.json",
+        "lib/net7.0/Syncfusion.Maui.DataSource.dll",
+        "lib/net7.0/Syncfusion.Maui.DataSource.xml",
+        "syncfusion.maui.datasource.21.1.38.nupkg.sha512",
+        "syncfusion.maui.datasource.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -39397,6 +41000,94 @@
         "lib/net7.0/Syncfusion.Maui.Gauges.xml",
         "syncfusion.maui.gauges.21.1.35.nupkg.sha512",
         "syncfusion.maui.gauges.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.GridCommon/21.1.38": {
+      "sha512": "zgZ3a+ZbNomT6xd5DnPTTu5kwWvSV64InrblS29z63CC2zXfT1tYPQhVMrmgjsfLw1c0mNhUI/uF5wknUn0ExA==",
+      "type": "package",
+      "path": "syncfusion.maui.gridcommon/21.1.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0-android30.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net6.0-android30.0/Syncfusion.Maui.GridCommon.xml",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.GridCommon.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.GridCommon.xml",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.xml",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.deps.json",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.xml",
+        "lib/net6.0/Syncfusion.Maui.GridCommon.deps.json",
+        "lib/net6.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net6.0/Syncfusion.Maui.GridCommon.xml",
+        "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.aar",
+        "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.GridCommon.xml",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.GridCommon.xml",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.GridCommon.xml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.GridCommon.xml",
+        "lib/net7.0/Syncfusion.Maui.GridCommon.deps.json",
+        "lib/net7.0/Syncfusion.Maui.GridCommon.dll",
+        "lib/net7.0/Syncfusion.Maui.GridCommon.xml",
+        "syncfusion.maui.gridcommon.21.1.38.nupkg.sha512",
+        "syncfusion.maui.gridcommon.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.ListView/21.1.38": {
+      "sha512": "xlMpikNi94jya+Oodg20TEUoTVfBpbJ8bP5m/64z12qhRKDt2YKOnItmeMg/+giIdqZWf9P7HvEwSmNCfwlxzw==",
+      "type": "package",
+      "path": "syncfusion.maui.listview/21.1.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll",
+        "lib/net6.0-android30.0/Syncfusion.Maui.ListView.xml",
+        "lib/net6.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll",
+        "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.xml",
+        "lib/net6.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll",
+        "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.xml",
+        "lib/net6.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.ListView.deps.json",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll",
+        "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.ListView.xml",
+        "lib/net6.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net6.0/Syncfusion.Maui.ListView.deps.json",
+        "lib/net6.0/Syncfusion.Maui.ListView.dll",
+        "lib/net6.0/Syncfusion.Maui.ListView.xml",
+        "lib/net6.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.ListView.aar",
+        "lib/net7.0-android30.0/Syncfusion.Maui.ListView.dll",
+        "lib/net7.0-android30.0/Syncfusion.Maui.ListView.xml",
+        "lib/net7.0-android30.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.dll",
+        "lib/net7.0-ios13.6/Syncfusion.Maui.ListView.xml",
+        "lib/net7.0-ios13.6/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll",
+        "lib/net7.0-maccatalyst13.5/Syncfusion.Maui.ListView.xml",
+        "lib/net7.0-maccatalyst13.5/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.ListView.xml",
+        "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "lib/net7.0/Syncfusion.Maui.ListView.deps.json",
+        "lib/net7.0/Syncfusion.Maui.ListView.dll",
+        "lib/net7.0/Syncfusion.Maui.ListView.xml",
+        "lib/net7.0/en-US/Syncfusion.Maui.ListView.resources.dll",
+        "syncfusion.maui.listview.21.1.38.nupkg.sha512",
+        "syncfusion.maui.listview.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -42712,9 +44403,10 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Controls.Maps >= 7.0.59",
-      "Microsoft.Maui.Graphics >= 7.0.59",
+      "Microsoft.Maui.Graphics >= 7.0.52",
       "Plugin.Maui.Popup >= 1.0.5",
       "Syncfusion.Maui.Gauges >= 21.1.35",
+      "Syncfusion.Maui.ListView >= 21.1.38",
       "Syncfusion.Maui.Maps >= 20.4.54",
       "Syncfusion.Maui.ProgressBar >= 21.1.35",
       "System.ObjectModel >= 4.3.0",
@@ -42743,9 +44435,10 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Controls.Maps >= 7.0.59",
-      "Microsoft.Maui.Graphics >= 7.0.59",
+      "Microsoft.Maui.Graphics >= 7.0.52",
       "Plugin.Maui.Popup >= 1.0.5",
       "Syncfusion.Maui.Gauges >= 21.1.35",
+      "Syncfusion.Maui.ListView >= 21.1.38",
       "Syncfusion.Maui.Maps >= 20.4.54",
       "Syncfusion.Maui.ProgressBar >= 21.1.35",
       "System.ObjectModel >= 4.3.0",
@@ -42763,9 +44456,10 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Controls.Maps >= 7.0.59",
-      "Microsoft.Maui.Graphics >= 7.0.59",
+      "Microsoft.Maui.Graphics >= 7.0.52",
       "Plugin.Maui.Popup >= 1.0.5",
       "Syncfusion.Maui.Gauges >= 21.1.35",
+      "Syncfusion.Maui.ListView >= 21.1.38",
       "Syncfusion.Maui.Maps >= 20.4.54",
       "Syncfusion.Maui.ProgressBar >= 21.1.35",
       "System.ObjectModel >= 4.3.0",
@@ -42783,12 +44477,13 @@
       "Microsoft.Extensions.Logging.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Controls.Maps >= 7.0.59",
-      "Microsoft.Maui.Graphics >= 7.0.59",
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.59",
+      "Microsoft.Maui.Graphics >= 7.0.52",
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.52",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.755",
-      "Microsoft.WindowsAppSDK >= 1.2.221209.1",
+      "Microsoft.WindowsAppSDK >= 1.2.221109.1",
       "Plugin.Maui.Popup >= 1.0.5",
       "Syncfusion.Maui.Gauges >= 21.1.35",
+      "Syncfusion.Maui.ListView >= 21.1.38",
       "Syncfusion.Maui.Maps >= 20.4.54",
       "Syncfusion.Maui.ProgressBar >= 21.1.35",
       "System.ObjectModel >= 4.3.0",
@@ -42798,26 +44493,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Porija\\.nuget\\packages\\": {},
-    "P:\\VisualStudioTools\\VisualStudioSharedComponents\\NuGetPackages": {},
-    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\porij\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Porija\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\GeolocationTest.csproj",
+      "projectUniqueName": "C:\\Users\\porij\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\GeolocationTest.csproj",
       "projectName": "GeolocationTest",
-      "projectPath": "C:\\Users\\Porija\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\GeolocationTest.csproj",
-      "packagesPath": "C:\\Users\\Porija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Porija\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\obj\\",
+      "projectPath": "C:\\Users\\porij\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\GeolocationTest.csproj",
+      "packagesPath": "C:\\Users\\porij\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\porij\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "P:\\VisualStudioTools\\VisualStudioSharedComponents\\NuGetPackages",
-        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Porija\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\porij\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -42829,7 +44524,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "c:\\program files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -42902,7 +44597,7 @@
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[7.0.59, )",
+            "version": "[7.0.52, )",
             "autoReferenced": true
           },
           "Plugin.Maui.Popup": {
@@ -42912,6 +44607,10 @@
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
             "version": "[21.1.35, )"
+          },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[21.1.38, )"
           },
           "Syncfusion.Maui.Maps": {
             "target": "Package",
@@ -43021,7 +44720,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       },
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
@@ -43068,7 +44767,7 @@
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[7.0.59, )",
+            "version": "[7.0.52, )",
             "autoReferenced": true
           },
           "Plugin.Maui.Popup": {
@@ -43078,6 +44777,10 @@
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
             "version": "[21.1.35, )"
+          },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[21.1.38, )"
           },
           "Syncfusion.Maui.Maps": {
             "target": "Package",
@@ -43132,7 +44835,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       },
       "net7.0-maccatalyst16.1": {
         "targetAlias": "net7.0-maccatalyst",
@@ -43179,7 +44882,7 @@
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[7.0.59, )",
+            "version": "[7.0.52, )",
             "autoReferenced": true
           },
           "Plugin.Maui.Popup": {
@@ -43189,6 +44892,10 @@
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
             "version": "[21.1.35, )"
+          },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[21.1.38, )"
           },
           "Syncfusion.Maui.Maps": {
             "target": "Package",
@@ -43244,7 +44951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       },
       "net7.0-windows10.0.19041": {
         "targetAlias": "net7.0-windows10.0.19041.0",
@@ -43291,12 +44998,12 @@
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[7.0.59, )",
+            "version": "[7.0.52, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
             "target": "Package",
-            "version": "[7.0.59, )",
+            "version": "[7.0.52, )",
             "autoReferenced": true
           },
           "Microsoft.Windows.SDK.BuildTools": {
@@ -43307,7 +45014,7 @@
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
-            "version": "[1.2.221209.1, )",
+            "version": "[1.2.221109.1, )",
             "autoReferenced": true
           },
           "Plugin.Maui.Popup": {
@@ -43317,6 +45024,10 @@
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
             "version": "[21.1.35, )"
+          },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[21.1.38, )"
           },
           "Syncfusion.Maui.Maps": {
             "target": "Package",
@@ -43357,11 +45068,11 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.1, 7.0.1]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.1, 7.0.1]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -43369,7 +45080,7 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.4, 7.0.4]"
+            "version": "[7.0.1, 7.0.1]"
           }
         ],
         "frameworkReferences": {
@@ -43389,7 +45100,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

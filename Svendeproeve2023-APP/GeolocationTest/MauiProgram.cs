@@ -4,6 +4,8 @@ using Microsoft.Maui.Platform;
 using Syncfusion.Maui.Core.Hosting;
 using GeolocationTest.Services;
 using GeolocationTest.Views;
+using CommunityToolkit.Maui;
+using GeolocationTest.Helper;
 
 namespace GeolocationTest;
 
@@ -21,6 +23,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			})
 			.UseMauiMaps()
+			.UseMauiCommunityToolkit()
 			.UseBarcodeReader();
         builder.ConfigureMauiHandlers(handlers =>
 		{
@@ -40,10 +43,12 @@ public static class MauiProgram
 
 		//Services
 		builder.Services.AddSingleton<TransportService>();
+		builder.Services.AddSingleton<CustomGroupComparer>();
 
 		//View Models
 		builder.Services.AddSingleton<TransportViewModel>();
 		builder.Services.AddSingleton<BetalingViewModel>();
+		builder.Services.AddSingleton<OrderViewModel>();
 		builder.Services.AddSingleton<BaseViewModel>();
 
         //Views Registration
@@ -51,6 +56,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginPage>();
         builder.Services.AddSingleton<HomePage>();
         builder.Services.AddSingleton<Scan>();
+        builder.Services.AddSingleton<OrderPage>();
         builder.Services.AddSingleton<SettingsPage>();
         builder.Services.AddSingleton<Transport>();
         builder.Services.AddSingleton<MobilePay>();

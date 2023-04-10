@@ -12,7 +12,10 @@ Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Microsoft.Maui.Maps.dll
 Syncfusion.Maui.Core.dll
+Syncfusion.Maui.DataSource.dll
 Syncfusion.Maui.Gauges.dll
+Syncfusion.Maui.GridCommon.dll
+Syncfusion.Maui.ListView.dll
 Syncfusion.Maui.Maps.dll
 Syncfusion.Maui.ProgressBar.dll
 Xamarin.Android.Glide.Annotations.dll
@@ -185,7 +188,10 @@ Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Microsoft.Maui.Maps.aar
 Syncfusion.Maui.Core.aar
+Syncfusion.Maui.DataSource.aar
 Syncfusion.Maui.Gauges.aar
+Syncfusion.Maui.GridCommon.aar
+Syncfusion.Maui.ListView.aar
 Syncfusion.Maui.ProgressBar.aar
 Xamarin.Google.AutoValue.Annotations.aar
 Xamarin.Google.Crypto.Tink.Android.aar

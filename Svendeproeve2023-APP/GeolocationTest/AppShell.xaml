@@ -27,6 +27,9 @@
         <Tab Title="Scan" Icon="scan.png">
             <ShellContent Title="Scan" Icon="scan.png" ContentTemplate="{DataTemplate views:Scan}" Route="scanning" />
         </Tab>
+        <Tab Title="Orders" Icon="journal_check.svg">
+            <ShellContent Title="Orders" Icon="journal_check.svg" ContentTemplate="{DataTemplate views:OrderPage}" Route="orders" />
+        </Tab>
         <Tab Title="Settings" Icon="gear_fill.svg">
             <ShellContent Icon="house_door_fill.svg" Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}" Route="settings" />
         </Tab>

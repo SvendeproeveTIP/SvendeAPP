@@ -32,7 +32,10 @@ public class MonoPackageManager_Resources {
 		"MauiPopup.dll",
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.Maui.Core.dll",
+		"Syncfusion.Maui.DataSource.dll",
 		"Syncfusion.Maui.Gauges.dll",
+		"Syncfusion.Maui.GridCommon.dll",
+		"Syncfusion.Maui.ListView.dll",
 		"Syncfusion.Maui.Maps.dll",
 		"Syncfusion.Maui.ProgressBar.dll",
 		"Xamarin.Android.Glide.dll",
@@ -129,6 +132,7 @@ public class MonoPackageManager_Resources {
 		"ZXing.Net.MAUI.dll",
 		"ZXing.Net.MAUI.Comet.dll",
 		"ZXing.Net.MAUI.Controls.dll",
+		"Syncfusion.Maui.ListView.resources.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};
