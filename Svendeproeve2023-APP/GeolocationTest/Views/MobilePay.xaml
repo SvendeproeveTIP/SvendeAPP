@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeolocationTest.Views.MobilePay"
+             xmlns:models="clr-namespace:GeolocationTest.Models"
+             xmlns:viewModels="clr-namespace:GeolocationTest.ViewModels"
+             BackgroundColor="#e0e0e0"
+             x:DataType="viewModels:BetalingViewModel"
+             Shell.TabBarIsVisible="False"
+             NavigationPage.HasBackButton="False"
+             Title="MobilePay">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="10" BackgroundColor="White" WidthRequest="250" HeightRequest="150" Grid.Row="1" >
+                <Label Margin="0, 20, 0, 0" TextColor="Black" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" x:Name="prisResult" />
+                <Image Source="lemoun.png" HeightRequest="70" HorizontalOptions="Center"/>
+            </StackLayout>
+            <Line Stroke="Black" Grid.Row="3" StrokeDashOffset="6" StrokeThickness="5" StrokeDashArray="3,1" X1="10" X2="370"></Line>
+            <StackLayout Spacing="10" Orientation="Horizontal" BackgroundColor="White" WidthRequest="340" HeightRequest="55" Grid.Row="3" >
+                <Image Source="mastercard.png" HeightRequest="50" HorizontalOptions="Start"/>
+                <Label Margin="0, 10, 0, 0" TextColor="Black" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center">5299663725400208  </Label>
+                <Image Source="arrow.png" HorizontalOptions="End"/>
+            </StackLayout>
+            <SwipeView Grid.Row="5">
+                <SwipeView.LeftItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:BetalingViewModel}}, Path=BetalCommand}" BackgroundColor="#e0e0e0"/>
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <Border StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,40,40,40"
+                    Background="#426ff5"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                    <Border.Stroke>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#425ff5"
+                          Offset="0.1" />
+                            <GradientStop Color="#424ff5"
+                          Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+                    <Grid HeightRequest="60"
+                      WidthRequest="300">
+                        <Image Source="arrow.png" HorizontalOptions="Start"/>
+                        <Label Text="Godkendt"
+                         FontSize="20"
+                         FontAttributes="Bold"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+            </SwipeView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

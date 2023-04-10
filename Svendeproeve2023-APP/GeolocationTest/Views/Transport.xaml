@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeolocationTest.Views.Transport"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="White"
+             Shell.TabBarIsVisible="False">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="barcodeResult" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"
+            FontSize="20"/>
+
+        <gauge:SfRadialGauge x:Name="timerGauge">
+            <gauge:SfRadialGauge.Axes>
+                <gauge:RadialAxis
+                              StartAngle="270"
+                              EndAngle="270"
+                              Maximum="18000"
+                              ShowLabels="False"
+                              ShowTicks="False">
+                    <gauge:RadialAxis.Pointers>
+                        <gauge:RangePointer x:Name="range"
+                                        Value="{Binding Source={x:Reference pointer},Path=Value}"
+                                        EnableAnimation="True"
+                                        Fill="green" />
+                        <gauge:ShapePointer x:Name="pointer"
+                                        Value="0"
+                                        EnableAnimation="True"
+                                        ShapeHeight="30"
+                                        ShapeWidth="30"
+                                        Stroke="Green"
+                                        BorderWidth="3"
+                                        ShapeType="Circle"
+                                        Fill="lightgreen" />
+                    </gauge:RadialAxis.Pointers>
+                    <gauge:RadialAxis.Annotations>
+                        <gauge:GaugeAnnotation PositionFactor="0.6"
+                                           DirectionValue="0"
+                                           DirectionUnit="AxisValue">
+                            <gauge:GaugeAnnotation.Content>
+                                <StackLayout>
+                                    <Button x:Name="pause"
+                                        Clicked="betalBTN"
+                                        Text="Betal"
+                                        TextTransform="Uppercase"
+                                        IsVisible="True"
+                                        FontSize="40"
+                                        FontFamily="Sync FontIcons"
+                                        TextColor="DarkRed"
+                                        FontAttributes="Bold"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        BorderWidth="0" />
+                                </StackLayout>
+                            </gauge:GaugeAnnotation.Content>
+                        </gauge:GaugeAnnotation>
+                        <gauge:GaugeAnnotation PositionFactor="0.2"
+                                           DirectionValue="0"
+                                           DirectionUnit="AxisValue">
+                            <gauge:GaugeAnnotation.Content>
+                                <Label x:Name="timerLabel"
+                                   Text="00:00:00"
+                                   FontSize="60"
+                                   TextColor="Green" />
+                            </gauge:GaugeAnnotation.Content>
+                        </gauge:GaugeAnnotation>
+                    </gauge:RadialAxis.Annotations>
+                </gauge:RadialAxis>
+            </gauge:SfRadialGauge.Axes>
+        </gauge:SfRadialGauge>
+
+        <Label x:Name="prisLabel"
+                                   Text="0.00 kr"
+                                   FontSize="60"
+                                   TextColor="Black"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+</ContentPage>
