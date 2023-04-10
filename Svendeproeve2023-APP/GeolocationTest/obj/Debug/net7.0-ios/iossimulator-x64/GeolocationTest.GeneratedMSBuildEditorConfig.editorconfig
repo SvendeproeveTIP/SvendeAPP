@@ -40,6 +40,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Resources.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Porija/Source/Repos/SvendeproeveTIP/SvendeAPP/Svendeproeve2023-APP/GeolocationTest/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[C:/Users/Porija/Source/Repos/SvendeproeveTIP/SvendeAPP/Svendeproeve2023-APP/GeolocationTest/Views/LoadingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.LoadingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoadingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoadingPage.xaml
+
 [C:/Users/Porija/Source/Repos/SvendeproeveTIP/SvendeAPP/Svendeproeve2023-APP/GeolocationTest/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.LoginPage.xaml
@@ -63,6 +75,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.Scan.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Scan.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Scan.xaml
+
+[C:/Users/Porija/Source/Repos/SvendeproeveTIP/SvendeAPP/Svendeproeve2023-APP/GeolocationTest/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
 
 [C:/Users/Porija/Source/Repos/SvendeproeveTIP/SvendeAPP/Svendeproeve2023-APP/GeolocationTest/Views/Transport.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

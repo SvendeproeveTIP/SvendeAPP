@@ -46,13 +46,16 @@ public static class MauiProgram
 		builder.Services.AddSingleton<BetalingViewModel>();
 		builder.Services.AddSingleton<BaseViewModel>();
 
-		//Views Registration
-		builder.Services.AddSingleton<MainPage>();
-		builder.Services.AddSingleton<MobilePay>();
-		builder.Services.AddSingleton<PopupPage>();
-		builder.Services.AddSingleton<Scan>();
-		builder.Services.AddSingleton<Transport>();
+        //Views Registration
+        builder.Services.AddSingleton<LoadingPage>();
+        builder.Services.AddSingleton<LoginPage>();
+        builder.Services.AddSingleton<HomePage>();
+        builder.Services.AddSingleton<Scan>();
+        builder.Services.AddSingleton<SettingsPage>();
+        builder.Services.AddSingleton<Transport>();
+        builder.Services.AddSingleton<MobilePay>();
+        builder.Services.AddSingleton<PopupPage>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

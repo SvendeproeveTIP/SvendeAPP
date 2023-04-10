@@ -12,35 +12,4 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
-
-    <Application.MainPage>
-        
-    <Shell FlyoutBehavior="Flyout" FlyoutHeaderBehavior="Fixed" FlyoutVerticalScrollMode="Auto">
-
-            <Shell.FlyoutBackground>
-                <LinearGradientBrush StartPoint="0,0"
-                             EndPoint="1,1">
-                    <GradientStop Color="#8A2387"
-                          Offset="0.1" />
-                    <GradientStop Color="#E94057"
-                          Offset="0.6" />
-                    <GradientStop Color="#F27121"
-                          Offset="1.0" />
-                </LinearGradientBrush>
-            </Shell.FlyoutBackground>
-
-
-            <FlyoutItem Title="Map" Icon="elscooter.png">
-                <Tab>
-                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-                </Tab>
-        </FlyoutItem>
-        <FlyoutItem Title="Scan" Icon="scan.png">
-                <Tab>
-                    <ShellContent ContentTemplate="{DataTemplate views:Scan}" />
-                </Tab>
-        </FlyoutItem>
-    </Shell>
-        
-    </Application.MainPage>
 </Application>

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2EQm9mVnSnDU4g8UCkd00KXqdxRyVveedf+Gi2rR+rtfMkBMNzII5JAx9xs4DGSkZvQsWDxU7FEdjMr2hYQMJA==",
+  "dgSpecHash": "T+RoK+NHkplKOTODwdcOYvB6pLwkshmtcfHOTNoLO6ZJ8GVwycO6/4D09gLtBoh5u636kd3PWkgvIoeOM+la0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Porija\\Source\\Repos\\SvendeproeveTIP\\SvendeAPP\\Svendeproeve2023-APP\\GeolocationTest\\GeolocationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Porija\\.nuget\\packages\\clancey.comet\\0.3.467-beta\\clancey.comet.0.3.467-beta.nupkg.sha512",
+    "C:\\Users\\Porija\\.nuget\\packages\\communitytoolkit.maui\\5.0.0\\communitytoolkit.maui.5.0.0.nupkg.sha512",
+    "C:\\Users\\Porija\\.nuget\\packages\\communitytoolkit.maui.core\\5.0.0\\communitytoolkit.maui.core.5.0.0.nupkg.sha512",
     "C:\\Users\\Porija\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0-preview2\\communitytoolkit.mvvm.8.2.0-preview2.nupkg.sha512",
     "C:\\Users\\Porija\\.nuget\\packages\\ecocore\\7.0.0.14638\\ecocore.7.0.0.14638.nupkg.sha512",
     "C:\\Users\\Porija\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",

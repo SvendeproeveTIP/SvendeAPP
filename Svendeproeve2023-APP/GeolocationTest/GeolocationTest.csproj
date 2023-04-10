@@ -55,10 +55,16 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\elscooter.png" />
+	  <None Remove="Resources\Images\gear_fill.svg" />
+	  <None Remove="Resources\Images\heart_fill.svg" />
+	  <None Remove="Resources\Images\journal_check.svg" />
 	  <None Remove="Resources\Images\lemoun.png" />
 	  <None Remove="Resources\Images\mastercard.png" />
+	  <None Remove="Resources\Images\plus_square_fill.svg" />
 	  <None Remove="Resources\Images\scan.png" />
+	  <None Remove="Resources\Images\search.svg" />
 	  <None Remove="Resources\Images\transparent.png" />
+	  <None Remove="Resources\Images\trash_fill.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,6 +72,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0-preview2" />
 		<PackageReference Include="EcoCore" Version="7.0.0.14638" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
@@ -81,6 +88,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoadingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -91,6 +104,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Scan.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Transport.xaml">

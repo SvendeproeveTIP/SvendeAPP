@@ -5,28 +5,30 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GeolocationTest"
     xmlns:views="clr-namespace:GeolocationTest.Views"
-    Shell.FlyoutBehavior="Flyout">
-    <Shell.FlyoutBackground>
-        <LinearGradientBrush StartPoint="0,0"
-                             EndPoint="1,1">
-            <GradientStop Color="#8A2387"
-                          Offset="0.1" />
-            <GradientStop Color="#E94057"
-                          Offset="0.6" />
-            <GradientStop Color="#F27121"
-                          Offset="1.0" />
-        </LinearGradientBrush>
-    </Shell.FlyoutBackground>
-    <FlyoutItem Title="Map"
-                Icon="elscooter.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    Shell.FlyoutBehavior="Disabled">
+
+    <!--Loading Page-->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:LoadingPage}"
+        Route="loading" />
+
+    <!--Login Page-->
+    <ShellContent 
+        Title="Login" 
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="login"/>
+
+    <!--Main Page-->
+    <TabBar>
+        <Tab Title="Map" Icon="elscooter.png">
+            <ShellContent Title="Map" Icon="elscooter.png" ContentTemplate="{DataTemplate views:HomePage}" Route="home" />
         </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Scan"
-             Icon="scan.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate views:Scan}" />
+        <Tab Title="Scan" Icon="scan.png">
+            <ShellContent Title="Scan" Icon="scan.png" ContentTemplate="{DataTemplate views:Scan}" Route="scanning" />
         </Tab>
-    </FlyoutItem>
+        <Tab Title="Settings" Icon="gear_fill.svg">
+            <ShellContent Icon="house_door_fill.svg" Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}" Route="settings" />
+        </Tab>
+    </TabBar>
 </Shell>
