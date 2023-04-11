@@ -10,7 +10,7 @@ namespace GeolocationTest.Helper
     {
         public CustomGroupComparer()
         {
-            this.SortDirection = ListSortDirection.Ascending;
+            this.SortDirection = ListSortDirection.Descending;
         }
 
         public ListSortDirection SortDirection
@@ -26,9 +26,9 @@ namespace GeolocationTest.Helper
 
             // Group results are compared and return the SortDirection
             if (xvalue.CompareTo(yvalue) > 0)
-                return SortDirection == ListSortDirection.Ascending ? 1 : -1;
+                return SortDirection == ListSortDirection.Descending ? -1 : 1;
             else if (xvalue.CompareTo(yvalue) == -1)
-                return SortDirection == ListSortDirection.Ascending ? -1 : 1;
+                return SortDirection == ListSortDirection.Descending ? 1 : -1;
             else
                 return 0;
         }

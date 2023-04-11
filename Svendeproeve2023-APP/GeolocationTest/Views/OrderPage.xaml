@@ -2,22 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GeolocationTest.Views.OrderPage"
+             xmlns:viewmodel="clr-namespace:GeolocationTest.ViewModels"
+             xmlns:helper="clr-namespace:GeolocationTest.Helper"
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
              BackgroundColor="White"
-             Title="OrderPage">
+             Title="Orders">
+    <ContentPage.BindingContext>
+        <viewmodel:OrderViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <syncfusion:SfListView x:Name="listView">
-            <syncfusion:SfListView.DataSource>
-                <data:DataSource>
-                    <data:DataSource.GroupDescriptors>
-                        <data:GroupDescriptor PropertyName="ContactName" />
-                    </data:DataSource.GroupDescriptors>
-                    <data:DataSource.SortDescriptors>
-                        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-                    </data:DataSource.SortDescriptors>
-                </data:DataSource>
-            </syncfusion:SfListView.DataSource>
+        <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
+            <syncfusion:SfListView.Behaviors>
+                <helper:Behavior/>
+            </syncfusion:SfListView.Behaviors>
+            <syncfusion:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Grid Padding="10,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="35" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="1"
+                   VerticalTextAlignment="Start" TextColor="Black" 
+                   Text="{Binding DateOfBirth, StringFormat='{0:dd/MM/yyyy}', Mode=TwoWay}"/>
+                            <Label Grid.Row="1"
+                   VerticalTextAlignment="Start" Padding="0, 0, 10, 0" TextColor="Green" HorizontalOptions="End" 
+                   Text="28.00kr"/>
+                            <Line  Grid.Row="2" Stroke="Lightgray" StrokeThickness="2" X1="0" X2="380"></Line>
+                        </Grid>
+                    </StackLayout>
+                </DataTemplate>
+            </syncfusion:SfListView.ItemTemplate>
+            <syncfusion:SfListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <StackLayout BackgroundColor="LightGray">
+                        <Label Text= "{Binding Key}" Padding="0,3,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="20" TextColor="Black"/>
+                    </StackLayout>
+                </DataTemplate>
+            </syncfusion:SfListView.GroupHeaderTemplate>
         </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
