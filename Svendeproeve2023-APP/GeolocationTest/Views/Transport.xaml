@@ -7,13 +7,6 @@
              BackgroundColor="White"
              Shell.TabBarIsVisible="False">
     <VerticalStackLayout>
-        <Label 
-            x:Name="barcodeResult" 
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            TextColor="Black"
-            FontSize="20"/>
-
         <gauge:SfRadialGauge x:Name="timerGauge">
             <gauge:SfRadialGauge.Axes>
                 <gauge:RadialAxis
@@ -38,34 +31,28 @@
                                         Fill="lightgreen" />
                     </gauge:RadialAxis.Pointers>
                     <gauge:RadialAxis.Annotations>
-                        <gauge:GaugeAnnotation PositionFactor="0.6"
+                        <gauge:GaugeAnnotation PositionFactor="0.0"
                                            DirectionValue="0"
                                            DirectionUnit="AxisValue">
                             <gauge:GaugeAnnotation.Content>
                                 <StackLayout>
-                                    <Button x:Name="pause"
-                                        Clicked="betalBTN"
-                                        Text="Betal"
-                                        TextTransform="Uppercase"
-                                        IsVisible="True"
-                                        FontSize="40"
-                                        FontFamily="Sync FontIcons"
-                                        TextColor="DarkRed"
-                                        FontAttributes="Bold"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        BorderWidth="0" />
+                                    <Label x:Name="prisLabel"
+                                   Text="00.00 kr"
+                                   Padding="0, 20, 0, 0"
+                                   FontSize="40"
+                                   TextColor="Black"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
                                 </StackLayout>
                             </gauge:GaugeAnnotation.Content>
                         </gauge:GaugeAnnotation>
-                        <gauge:GaugeAnnotation PositionFactor="0.2"
+                        <gauge:GaugeAnnotation PositionFactor="0.3"
                                            DirectionValue="0"
                                            DirectionUnit="AxisValue">
                             <gauge:GaugeAnnotation.Content>
                                 <Label x:Name="timerLabel"
                                    Text="00:00:00"
-                                   FontSize="60"
+                                   FontSize="50"
                                    TextColor="Green" />
                             </gauge:GaugeAnnotation.Content>
                         </gauge:GaugeAnnotation>
@@ -74,12 +61,41 @@
             </gauge:SfRadialGauge.Axes>
         </gauge:SfRadialGauge>
 
-        <Label x:Name="prisLabel"
-                                   Text="0.00 kr"
-                                   FontSize="60"
-                                   TextColor="Black"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="Center"/>
+
+        <StackLayout>
+            <Button x:Name="pause"
+                                        Clicked="betalBTN"
+                                        Text="Betal"
+                                        TextTransform="Uppercase"
+                                        IsVisible="True"
+                                        FontSize="30"
+                                        FontFamily="Sync FontIcons"
+                                        TextColor="White"
+                                        FontAttributes="Bold"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="#ff0051"
+                                        WidthRequest="200"
+                                        HeightRequest="70"
+                                        BorderWidth="2"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label 
+            TextColor="Black"            
+            VerticalOptions="Center"
+            Padding="20,20,0,0"
+            HorizontalOptions="Start"
+            FontSize="30">Ordre detaljer</Label>
+            <Line Stroke="Lightgray" StrokeThickness="3" X1="20" X2="360"></Line>
+            <Label
+            Padding="25, 20, 0, 0"
+            x:Name="barcodeResult" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Start"
+            TextColor="Black"
+            FontSize="20"/>
+        </StackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

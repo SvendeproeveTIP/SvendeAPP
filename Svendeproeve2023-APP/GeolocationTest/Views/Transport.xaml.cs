@@ -65,9 +65,9 @@ public partial class Transport : ContentPage
     }
     public string QrCodeResult
     {
-        set
+    set
         {
-            barcodeResult.Text = $"Transport Information\n{value}";
+            barcodeResult.Text = $"{value}";
         }
     }
 
