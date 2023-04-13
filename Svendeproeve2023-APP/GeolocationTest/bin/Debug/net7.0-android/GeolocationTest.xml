@@ -22,6 +22,29 @@
         <member name="P:GeolocationTest.ViewModels.BetalingViewModel.BetalCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:GeolocationTest.ViewModels.BetalingViewModel.Betal"/>.</summary>
         </member>
+        <member name="T:GeolocationTest.ViewModels.MapViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:GeolocationTest.ViewModels.MapViewModel.IsReady">
+            <inheritdoc cref="F:GeolocationTest.ViewModels.MapViewModel.isReady"/>
+        </member>
+        <member name="P:GeolocationTest.ViewModels.MapViewModel.BindablePlaces">
+            <inheritdoc cref="F:GeolocationTest.ViewModels.MapViewModel.bindablePlaces"/>
+        </member>
+        <member name="F:GeolocationTest.ViewModels.MapViewModel.getCurrentLocationCommand">
+            <summary>The backing field for <see cref="P:GeolocationTest.ViewModels.MapViewModel.GetCurrentLocationCommand"/>.</summary>
+        </member>
+        <member name="P:GeolocationTest.ViewModels.MapViewModel.GetCurrentLocationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GeolocationTest.ViewModels.MapViewModel.GetCurrentLocationAsync"/>.</summary>
+        </member>
+        <member name="F:GeolocationTest.ViewModels.MapViewModel.disposeCancellationTokenCommand">
+            <summary>The backing field for <see cref="P:GeolocationTest.ViewModels.MapViewModel.DisposeCancellationTokenCommand"/>.</summary>
+        </member>
+        <member name="P:GeolocationTest.ViewModels.MapViewModel.DisposeCancellationTokenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:GeolocationTest.ViewModels.MapViewModel.DisposeCancellationToken"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -133,6 +156,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsReady">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsReady" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BindablePlaces">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BindablePlaces" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -142,11 +171,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsReady">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsReady" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BindablePlaces">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BindablePlaces" generated properties.</summary>
         </member>
     </members>
 </doc>

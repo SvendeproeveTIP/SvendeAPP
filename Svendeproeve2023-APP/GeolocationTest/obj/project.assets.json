@@ -59,21 +59,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -2499,21 +2484,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "GoogleGson/2.9.1.1": {
@@ -4943,21 +4913,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -7383,21 +7338,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "GoogleGson/2.9.1.1": {
@@ -9827,21 +9767,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -12267,21 +12192,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "GoogleGson/2.9.1.1": {
@@ -14711,21 +14621,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -17151,21 +17046,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "GoogleGson/2.9.1.1": {
@@ -19595,21 +19475,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -20248,21 +20113,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -21050,21 +20900,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -21848,21 +21683,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -22650,21 +22470,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -23448,21 +23253,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -24250,21 +24040,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -25050,21 +24825,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -25831,21 +25591,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -26484,21 +26229,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -27286,21 +27016,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -28084,21 +27799,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -28886,21 +28586,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -29684,21 +29369,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -30486,21 +30156,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -31286,21 +30941,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -32065,21 +31705,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -32847,21 +32472,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -33748,21 +33358,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -34645,21 +34240,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -35546,21 +35126,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -36443,21 +36008,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -37344,21 +36894,6 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -38241,21 +37776,6 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
-        }
-      },
-      "EcoCore/7.0.0.14638": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Eco.Handles.dll": {},
-          "lib/net40/Eco.Interfaces.dll": {},
-          "lib/net40/Eco.LinqExtender.dll": {},
-          "lib/net40/MDriven.Net.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -39176,22 +38696,6 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
-      ]
-    },
-    "EcoCore/7.0.0.14638": {
-      "sha512": "xLJVqwgo7QpW/ukVM0WU3HFpod78I4Jub44RSOUr5B4rAwOSG/J173RtvHdY8BGmfwHwhwZFYGooE3Jw1yZNbg==",
-      "type": "package",
-      "path": "ecocore/7.0.0.14638",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EcoCore.nuspec.org",
-        "ecocore.7.0.0.14638.nupkg.sha512",
-        "ecocore.nuspec",
-        "lib/net40/Eco.Handles.dll",
-        "lib/net40/Eco.Interfaces.dll",
-        "lib/net40/Eco.LinqExtender.dll",
-        "lib/net40/MDriven.Net.Http.dll"
       ]
     },
     "GoogleGson/2.9.1.1": {
@@ -44396,7 +43900,6 @@
     "net7.0-android33.0": [
       "CommunityToolkit.Maui >= 5.0.0",
       "CommunityToolkit.Mvvm >= 8.2.0-preview2",
-      "EcoCore >= 7.0.0.14638",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -44428,7 +43931,6 @@
     "net7.0-ios16.1": [
       "CommunityToolkit.Maui >= 5.0.0",
       "CommunityToolkit.Mvvm >= 8.2.0-preview2",
-      "EcoCore >= 7.0.0.14638",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -44449,7 +43951,6 @@
     "net7.0-maccatalyst16.1": [
       "CommunityToolkit.Maui >= 5.0.0",
       "CommunityToolkit.Mvvm >= 8.2.0-preview2",
-      "EcoCore >= 7.0.0.14638",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -44470,7 +43971,6 @@
     "net7.0-windows10.0.19041": [
       "CommunityToolkit.Maui >= 5.0.0",
       "CommunityToolkit.Mvvm >= 8.2.0-preview2",
-      "EcoCore >= 7.0.0.14638",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -44562,10 +44062,6 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0-preview2, )"
-          },
-          "EcoCore": {
-            "target": "Package",
-            "version": "[7.0.0.14638, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -44733,10 +44229,6 @@
             "target": "Package",
             "version": "[8.2.0-preview2, )"
           },
-          "EcoCore": {
-            "target": "Package",
-            "version": "[7.0.0.14638, )"
-          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[7.0.0, )",
@@ -44847,10 +44339,6 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0-preview2, )"
-          },
-          "EcoCore": {
-            "target": "Package",
-            "version": "[7.0.0.14638, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -44963,10 +44451,6 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0-preview2, )"
-          },
-          "EcoCore": {
-            "target": "Package",
-            "version": "[7.0.0.14638, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -45126,17 +44610,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EcoCore 7.0.0.14638' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-android33.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EcoCore",
-      "targetGraphs": [
-        "net7.0-android33.0"
-      ]
-    }
-  ]
+  }
 }

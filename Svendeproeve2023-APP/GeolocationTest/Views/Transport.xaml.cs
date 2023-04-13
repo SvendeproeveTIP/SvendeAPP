@@ -1,5 +1,6 @@
 using Microsoft.Maui.Dispatching;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using ZXing;
 
 namespace GeolocationTest.Views;
@@ -67,7 +68,18 @@ public partial class Transport : ContentPage
     {
     set
         {
-            barcodeResult.Text = $"{value}";
+            string pattern = @"Ordrenr=([^;]+); Løbehjulnr=([0-9]+); Batteri=([^%]+)";
+            string s = $"{value}";
+
+            Match m = Regex.Match(s, pattern);
+            string var1 = m.Groups[1].Value;
+            string var2 = m.Groups[2].Value;    
+            string var3 = m.Groups[3].Value;
+
+            ordrenrResult.Text = $"Ordre nr: {var1}";
+            transportnrResult.Text = $"Løbehjul nr: {var2}";
+            batteryResult.Text = $": {var3}%";
+
         }
     }
 

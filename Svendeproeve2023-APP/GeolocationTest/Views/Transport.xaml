@@ -80,22 +80,53 @@
                                         BorderWidth="2"/>
         </StackLayout>
 
-        <StackLayout>
-            <Label 
-            TextColor="Black"            
-            VerticalOptions="Center"
-            Padding="20,20,0,0"
-            HorizontalOptions="Start"
-            FontSize="30">Ordre detaljer</Label>
-            <Line Stroke="Lightgray" StrokeThickness="3" X1="20" X2="360"></Line>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            
             <Label
-            Padding="25, 20, 0, 0"
-            x:Name="barcodeResult" 
-            VerticalOptions="Center" 
-            HorizontalOptions="Start"
+            Padding="-5,0,0,0"
+            Grid.Column="1"
+            Grid.Row="1"
+            TextColor="Black"            
+            FontSize="30">Ordre detaljer</Label>
+            <Line Grid.Column="1" Grid.Row="2" Stroke="Lightgray" StrokeThickness="3" X1="-20" X2="340"></Line>
+            <Label
+            Padding="5,0,0,0"
+            Grid.Column="1"
+            Grid.Row="3"
+            x:Name="ordrenrResult" 
             TextColor="Black"
             FontSize="20"/>
-        </StackLayout>
+            <Label
+            Padding= "5,0,0,0"
+            Grid.Column="1"
+            Grid.Row="4"
+            x:Name="transportnrResult" 
+            TextColor="Black"
+            FontSize="20"/>
+            <Image Grid.Row="5" Grid.Column="1" Source="battery.png" HeightRequest="30" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
+            <Label
+            Padding="30, 0, 0, 0"
+            Grid.Row="5"
+            Grid.Column="1"
+            x:Name="batteryResult" 
+            TextColor="Black"
+            FontSize="20"/>
+        </Grid>
 
     </VerticalStackLayout>
 </ContentPage>

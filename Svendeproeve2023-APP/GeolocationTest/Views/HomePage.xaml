@@ -6,18 +6,24 @@
              xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
              xmlns:mauiMaps="clr-namespace:GeolocationTest"
              xmlns:models="clr-namespace:GeolocationTest.Models"
-             xmlns:viewmodels="clr-namespace:GeolocationTest.ViewModels"
+             xmlns:vm="clr-namespace:GeolocationTest.ViewModels"
+             xmlns:behaviors="clr-namespace:GeolocationTest.Helper"
+             x:DataType="vm:MapViewModel"
              Title="Map">
     
-    <maps:Map x:Name="MyMap" IsShowingUser="True" ItemsSource="{Binding LocationPins}" IsZoomEnabled="True">
+    <maps:Map IsShowingUser="True" ItemsSource="{Binding Places}" IsZoomEnabled="True">
+        <maps:Map.Behaviors>
+            <behaviors:MapBehavior
+                IsReady="{Binding IsReady}"
+                Places="{Binding BindablePlaces}" />
+        </maps:Map.Behaviors>
+            
         <maps:Map.ItemTemplate>
-            <DataTemplate x:DataType="{x:Type models:LocationPin}">
-                <mauiMaps:CustomPin
+            <DataTemplate x:DataType="models:LocationPin">
+                <maps:Pin
                     Location="{Binding Location}"
                     Address="{Binding Address}"
-                    Label="{Binding Description}"
-                    ImageSource="{Binding ImageSource}"
-                    Type="Generic" />
+                    Label="{Binding Description}" />
             </DataTemplate>
         </maps:Map.ItemTemplate>
     </maps:Map>

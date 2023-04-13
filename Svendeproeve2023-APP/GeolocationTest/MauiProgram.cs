@@ -6,6 +6,7 @@ using GeolocationTest.Services;
 using GeolocationTest.Views;
 using CommunityToolkit.Maui;
 using GeolocationTest.Helper;
+using GeolocationTest.ViewModels;
 
 namespace GeolocationTest;
 
@@ -38,18 +39,18 @@ public static class MauiProgram
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-		builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
-		builder.Services.AddSingleton<IMap>(Map.Default);
+        builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
+        builder.Services.AddSingleton<IGeocoding>(Geocoding.Default);
 
 		//Services
 		builder.Services.AddSingleton<TransportService>();
 		builder.Services.AddSingleton<CustomGroupComparer>();
 
 		//View Models
-		builder.Services.AddSingleton<TransportViewModel>();
-		builder.Services.AddSingleton<BetalingViewModel>();
-		builder.Services.AddSingleton<OrderViewModel>();
-		builder.Services.AddSingleton<BaseViewModel>();
+		builder.Services.AddTransient<TransportViewModel>();
+		builder.Services.AddTransient<BetalingViewModel>();
+		builder.Services.AddTransient<OrderViewModel>();
+        builder.Services.AddTransient<MapViewModel>();
 
         //Views Registration
         builder.Services.AddSingleton<LoadingPage>();
