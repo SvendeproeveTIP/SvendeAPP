@@ -1,5 +1,6 @@
 using Microsoft.Maui.Maps;
 using GeolocationTest.ViewModels;
+using Microsoft.Maui.Controls.Maps;
 
 namespace GeolocationTest.Views;
 

@@ -20,10 +20,12 @@
             
         <maps:Map.ItemTemplate>
             <DataTemplate x:DataType="models:LocationPin">
-                <maps:Pin
+                <mauiMaps:CustomPin
                     Location="{Binding Location}"
                     Address="{Binding Address}"
-                    Label="{Binding Description}" />
+                    Label="{Binding Description}"
+                    Type="{Binding Type}"
+                    ImageSource="{Binding ImageSource}" />
             </DataTemplate>
         </maps:Map.ItemTemplate>
     </maps:Map>

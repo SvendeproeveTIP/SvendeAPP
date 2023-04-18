@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Maui.Controls.Maps;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,9 @@ namespace GeolocationTest.Models
         public Location Location { get; set; }
         public string Address { get; set; }
         public string Description { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public PinType Type { get; set; }
         public ImageSource ImageSource { get; set; }
     }
 }
