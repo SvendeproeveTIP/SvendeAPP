@@ -45,6 +45,7 @@ public static class MauiProgram
 		//Services
 		builder.Services.AddSingleton<TransportService>();
 		builder.Services.AddSingleton<CustomGroupComparer>();
+		builder.Services.AddSingleton<IRestDataService, RestDataService>();
 
 		//View Models
 		builder.Services.AddTransient<TransportViewModel>();
@@ -58,10 +59,12 @@ public static class MauiProgram
         builder.Services.AddSingleton<HomePage>();
         builder.Services.AddSingleton<Scan>();
         builder.Services.AddSingleton<OrderPage>();
+        builder.Services.AddSingleton<UsersPage>();
         builder.Services.AddSingleton<SettingsPage>();
         builder.Services.AddSingleton<Transport>();
         builder.Services.AddSingleton<MobilePay>();
         builder.Services.AddSingleton<PopupPage>();
+		builder.Services.AddTransient<ManageUserPage>();
 
         return builder.Build();
 	}

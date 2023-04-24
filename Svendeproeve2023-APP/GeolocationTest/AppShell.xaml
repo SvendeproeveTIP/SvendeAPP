@@ -30,8 +30,11 @@
         <Tab Title="Orders" Icon="journal_check.svg">
             <ShellContent Title="Orders" Icon="journal_check.svg" ContentTemplate="{DataTemplate views:OrderPage}" Route="orders" />
         </Tab>
+        <Tab Title="Users" Icon="dotnet_bot.svg">
+            <ShellContent Icon="dotnet_bot.svg" Title="Users" ContentTemplate="{DataTemplate views:UsersPage}" Route="userspage" />
+        </Tab>
         <Tab Title="Settings" Icon="gear_fill.svg">
-            <ShellContent Icon="house_door_fill.svg" Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}" Route="settings" />
+            <ShellContent Icon="gear_fill.svg" Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}" Route="settings" />
         </Tab>
     </TabBar>
 </Shell>
