@@ -15,6 +15,8 @@ namespace GeolocationTest.Services
         JsonSerializerOptions _jsonSerializerOptions;
 
         public List<Users> Users { get; private set; }
+        public List<Vehicles> Vehicles { get; private set; }
+        public List<Ordres> Ordres { get; private set; }
 
         public RestDataService()
         {
@@ -63,7 +65,7 @@ namespace GeolocationTest.Services
             return;
         }
 
-        public async Task DeleteUserAsync(int id)
+        public async Task DeleteUserAsync(long id)
         {
             if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
             {
@@ -138,7 +140,259 @@ namespace GeolocationTest.Services
                 string jsonUser = JsonSerializer.Serialize<Users>(user, _jsonSerializerOptions);
                 StringContent content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await _httpClient.PutAsync($"{_url}/User/{user.Id}", content);
+                HttpResponseMessage response = await _httpClient.PutAsync($"{_url}/User/{user.UserId}", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully updated user");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task<List<Vehicles>> GetAllVehicles()
+        {
+            Vehicles = new List<Vehicles>();
+
+            if(Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return Vehicles;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync($"{_url}/Vehicle");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+
+                    Vehicles = JsonSerializer.Deserialize<List<Vehicles>>(content, _jsonSerializerOptions);
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return Vehicles;
+        }
+
+        public async Task AddVehicleAsync(Vehicles vehicle)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                string jsonUser = JsonSerializer.Serialize<Vehicles>(vehicle, _jsonSerializerOptions);
+                StringContent content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await _httpClient.PostAsync($"{_url}/Vehicle", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully created a Vehicle");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task DeleteVehicleAsync(long id)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await _httpClient.DeleteAsync($"{_url}/Vehicle/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully deleted vehicle");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task UpdateVehicleAsync(Vehicles vehicles)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                string jsonUser = JsonSerializer.Serialize<Vehicles>(vehicles, _jsonSerializerOptions);
+                StringContent content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await _httpClient.PutAsync($"{_url}/Vehicle/{vehicles.VehicleId}", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully updated user");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task<List<Ordres>> GetAllOrdres()
+        {
+            Ordres = new List<Ordres>();
+
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return Ordres;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync($"{_url}/Order");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+
+                    Ordres = JsonSerializer.Deserialize<List<Ordres>>(content, _jsonSerializerOptions);
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return Ordres;
+        }
+
+        public async Task AddOrdreAsync(Ordres ordre)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                string jsonUser = JsonSerializer.Serialize<Ordres>(ordre, _jsonSerializerOptions);
+                StringContent content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await _httpClient.PostAsync($"{_url}/Order", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully created a Vehicle");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task DeleteOrdreAsync(long id)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await _httpClient.DeleteAsync($"{_url}/Order/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine("Successfully deleted vehicle");
+                }
+                else
+                {
+                    Debug.WriteLine("---> Non Http 2xx response");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Whoops exception: {ex.Message}");
+            }
+
+            return;
+        }
+
+        public async Task UpdateOrdreAsync(Ordres ordre)
+        {
+            if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            {
+                Debug.WriteLine("---> No Internet Access....");
+                return;
+            }
+
+            try
+            {
+                string jsonUser = JsonSerializer.Serialize<Ordres>(ordre, _jsonSerializerOptions);
+                StringContent content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await _httpClient.PutAsync($"{_url}/Order/{ordre.OrdreId}", content);
 
                 if (response.IsSuccessStatusCode)
                 {

@@ -125,4 +125,6 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionGeolocationTestHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>

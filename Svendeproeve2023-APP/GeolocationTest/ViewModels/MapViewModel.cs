@@ -4,11 +4,13 @@ using CommunityToolkit.Mvvm.Input;
 using GeolocationTest.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.VisualBasic;
+using GeolocationTest.Services;
 
 namespace GeolocationTest.ViewModels
 {
     public partial class MapViewModel : BaseViewModel
     {
+        private readonly IRestDataService _dataService;
         public ObservableCollection<LocationPin> Places { get; } = new();
 
         [ObservableProperty]
@@ -22,10 +24,12 @@ namespace GeolocationTest.ViewModels
         private IGeocoding geocoding;
         private LocationPin custompin;
 
-        public MapViewModel(IGeolocation geolocation, IGeocoding geocoding) 
+        public MapViewModel(IGeolocation geolocation, IGeocoding geocoding, IRestDataService dataService) 
         {
             this.geolocation = geolocation;
             this.geocoding = geocoding;
+
+            _dataService = dataService;
         }
         
         [RelayCommand]
@@ -46,20 +50,15 @@ namespace GeolocationTest.ViewModels
 
                 Places.Clear();
 
-                LocationPin[] information = new LocationPin[]
-                {
-                    new LocationPin { Description = "Løbehjul 1", Latitude = 55.46332847178871, Longitude = 10.078609547748593, Address = "100% Batteri tilbage" },
-                    new LocationPin { Description = "Løbehjul 2", Latitude = 55.27602983331951, Longitude = 10.306575837826882, Address = "59% Batteri tilbage" },
-                    // Add more locations as needed
-                };
+                var information = await _dataService.GetAllVehicles();
 
                 foreach (var item in information)
                 {
                     var custompin = new LocationPin()
                     {
-                        Location = new Location(item.Latitude, item.Longitude),
-                        Address = item.Address,
-                        Description = item.Description,
+                        Location = new Location(item.Lattitude, item.Longtitude),
+                        Address = $"{item.Battery}%",
+                        Description = item.VehicleName,
                         Type = PinType.Place,
                         ImageSource = "elscooter.png"
                     };

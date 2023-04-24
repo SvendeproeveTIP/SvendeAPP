@@ -32,7 +32,7 @@ public partial class ManageUserPage : ContentPage
 
 	bool IsNew(Users user)
 	{
-		if (user.Id == 0)
+		if (user.UserId == 0)
 			return true;
 		return false;
 	}
@@ -55,7 +55,7 @@ public partial class ManageUserPage : ContentPage
 
 	async void OnDeleteButtonClicked(object sender, EventArgs e)
 	{
-		await _dataService.DeleteUserAsync(Users.Id);
+		await _dataService.DeleteUserAsync(Users.UserId);
         await Shell.Current.GoToAsync("..");
     }
 

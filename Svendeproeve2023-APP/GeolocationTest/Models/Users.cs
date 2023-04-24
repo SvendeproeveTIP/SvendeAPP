@@ -16,17 +16,17 @@ namespace GeolocationTest.Models
         //public long StatusId { get; set; }
         //public long RoleId { get; set; }
 
-        int _id;
-        public int Id
+        long _userid;
+        public long UserId
         {
-            get => _id;
+            get => _userid;
             set
             {
-                if (_id == value)
+                if (_userid == value)
                     return;
 
-                _id = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Id)));
+                _userid = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UserId)));
             }
         }
         string _email;

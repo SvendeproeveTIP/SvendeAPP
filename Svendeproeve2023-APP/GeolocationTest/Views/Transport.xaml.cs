@@ -68,17 +68,15 @@ public partial class Transport : ContentPage
     {
     set
         {
-            string pattern = @"Ordrenr=([^;]+); Løbehjulnr=([0-9]+); Batteri=([^%]+)";
+            string pattern = @"Løbehjulnr=([0-9]+); Batteri=([^%]+)";
             string s = $"{value}";
 
             Match m = Regex.Match(s, pattern);
             string var1 = m.Groups[1].Value;
             string var2 = m.Groups[2].Value;    
-            string var3 = m.Groups[3].Value;
 
-            ordrenrResult.Text = $"Ordre nr: {var1}";
-            transportnrResult.Text = $"Løbehjul nr: {var2}";
-            batteryResult.Text = $": {var3}%";
+            transportnrResult.Text = $"Løbehjul nr: {var1}";
+            batteryResult.Text = $": {var2}%";
 
         }
     }

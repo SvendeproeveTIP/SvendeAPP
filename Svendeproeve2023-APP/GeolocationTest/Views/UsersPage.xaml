@@ -24,7 +24,9 @@
                         StrokeThickness="2"
                         BackgroundColor="Transparent">
                 <HorizontalStackLayout Spacing="60">
-                    <Label
+                        <Label
+                        Text="{Binding UserId}" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+                        <Label
                         Text="{Binding Email}" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
                     <Label
                         Text="{Binding Password}" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>

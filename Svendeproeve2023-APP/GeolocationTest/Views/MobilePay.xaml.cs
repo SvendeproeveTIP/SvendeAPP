@@ -1,3 +1,4 @@
+using GeolocationTest.Services;
 using GeolocationTest.ViewModels;
 using MauiPopup;
 using ZXing.Net.Maui;
@@ -8,9 +9,10 @@ namespace GeolocationTest.Views;
 public partial class MobilePay : ContentPage
 {
 	private BetalingViewModel _viewModel;
-	public MobilePay(BetalingViewModel viewModel)
+    public MobilePay(BetalingViewModel viewModel)
 	{
 		InitializeComponent();
+
         Shell.SetBackButtonBehavior(this, new BackButtonBehavior
         {
             IconOverride = "transparent.png",
@@ -20,7 +22,6 @@ public partial class MobilePay : ContentPage
         _viewModel = viewModel;
 		this.BindingContext = viewModel;
 	}
-
     public string PrisResult
     {
         set
@@ -31,7 +32,7 @@ public partial class MobilePay : ContentPage
 
     private void BetalInvoked(object sender, EventArgs e)
 	{
-       PopupAction.DisplayPopup(new PopupPage());
+        PopupAction.DisplayPopup(new PopupPage());
     }
 
     protected override bool OnBackButtonPressed()
